@@ -23,6 +23,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
 //mongodb configuration
+
 const dbURL = require('./keys/myurl').mongoURL;
 mongoose
 .connect(dbURL)

@@ -1,0 +1,79 @@
+<div class="container-fluid">
+  <div class="row" style="padding-top:30px;">
+    <div class="col-xs-6" style="min-height:80vh;">
+      <div class="row">
+        <h3 style="text-align:center;">Swap Books with user</h3>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="">user</label>
+            <input type="text" ng-model="userForm.user" class="form-control" placeholder="user id">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="">library</label>
+            <input type="text" ng-model="userForm.library" class="form-control" placeholder="library id">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="">books to be swapped</label>
+            <input type="text" ng-model="userForm.bookIdsOne" class="form-control" placeholder="books to be swapped">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="">New Books</label>
+            <input type="text" ng-model="userForm.bookIdsTwo" class="form-control" placeholder="new books">
+          </div>
+        </div>
+        <div class="row text-center">
+          <button ng-click="swapWithUser()" type="button" class="btn btn-primary">
+            Swap
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-6" style="border-left:1px solid #b6b1b1; min-height:80vh;">
+      <div class="row">
+        <h3 style="text-align:center;">Swap books with other libraries</h3>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="">library1</label>
+            <input type="text" ng-model="libraryForm.libraryOne" class="form-control" placeholder="library1 id">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="">library2</label>
+            <input type="text" ng-model="libraryForm.libraryTwo" class="form-control" placeholder="library2 id">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="">books to be swapped</label>
+            <input type="text" ng-model="libraryForm.bookIdsOne" class="form-control" placeholder="books to be swapped">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="">New Books</label>
+            <input type="text" ng-model="libraryForm.bookIdsTwo" class="form-control" placeholder="new books">
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <button ng-click="swapWithLib()" type="button" class="btn btn-primary">
+          Swap
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</div>

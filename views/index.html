@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title> Online Library </title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/static/css/ripple.min.css">
+</head>
+
+<body>
+
+  <div class="zillion_container" ng-app="online_library" ng-controller="controller.home">
+    <div class="left_container">
+      <ul class="zillion_ul">
+        <li class="{{selectedView.name=='user'?'zillion_li_active':''}} ripple" ng-click="changeView('user')">User</li>
+        <li class="{{selectedView.name=='book'?'zillion_li_active':''}} ripple" ng-click="changeView('book')">Books</li>
+        <li class="{{selectedView.name=='library'?'zillion_li_active':''}} ripple" ng-click="changeView('library')">Library</li>
+        <li class="{{selectedView.name=='order'?'zillion_li_active':''}} ripple" ng-click="changeView('order')">Oder Books</li>
+        <li class="{{selectedView.name=='swapbook'?'zillion_li_active':''}} ripple" ng-click="changeView('swapbook')">Swap Books</li>
+        <li class="{{selectedView.name=='data'?'zillion_li_active':''}} ripple" ng-click="changeView('data')">Fetch Data</li>
+      </ul>
+    </div>
+    <div class="right_container">
+      <div ui-view></div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="/static/js/angular.min.js"></script>
+  <script type="text/javascript" src="/static/js/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="/static/js/onlinelibrary.js"></script>
+</body>
+
+</html>

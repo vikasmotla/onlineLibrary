@@ -1,0 +1,56 @@
+<div class="container-fluid">
+  <div class="row" style="padding-top:30px;">
+    <div class="col-xs-6" style="min-height:80vh;">
+      <div class="row">
+        <h3 style="text-align:center;">Books</h3>
+      </div>
+      <div class="row">
+        <div ng-repeat="b in books" style="word-wrap: break-word; padding:15px 30px;">
+          <div class="row">
+            {{b}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-6" style="border-left:1px solid #b6b1b1; min-height:80vh;">
+      <div class="row">
+        <h3 style="text-align:center;">Create Book</h3>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="">name</label>
+            <input type="text" ng-model="form.name" class="form-control" id="" placeholder="name">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for=""> author </label>
+            <input type="text" ng-model="form.author" class="form-control" id="" placeholder="author">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for=""> qr code </label>
+            <input type="text" ng-model="form.qr_code" class="form-control" id="" placeholder="qr code">
+          </div>
+        </div>
+
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for=""> book id </label>
+            <input type="text" ng-model="form.book_code" class="form-control" id="" placeholder="book id">
+          </div>
+        </div>
+
+      </div>
+      <div class="row text-center">
+        <button ng-click="createBook()" type="button" class="btn btn-primary">
+          Create
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</div>

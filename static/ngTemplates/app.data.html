@@ -1,0 +1,40 @@
+<div class="container-fluid" style="padding:15px;">
+  <div class="row">
+    <div class="col-xs-6" style="border-right:1px solid #e0e0e0; min-height:75vh;">
+      <h3 style="text-align:center;">Data</h3>
+      <div class="row" style="word-wrap: break-word; padding:30px;">
+        {{data}}
+      </div>
+    </div>
+    <div class="col-xs-6" style="min-height:75vh;">
+      <div class="row container-fluid" style="padding-top:20px;">
+        <button ng-click="getAllSwappedBooksWithUser()" type="button" class="btn btn-primary" >
+          Get All Swapped Books With User
+        </button>
+      </div>
+      <div class="row container-fluid" style="padding-top:20px;">
+        <button ng-click="getAllSwappedBooksWithLib()" type="button" class="btn btn-primary" >
+          Get All Swapped Books With Library
+        </button>
+      </div>
+      <div class="row container-fluid" style="padding-top:20px;">
+        <div class="form-group">
+          <label for="">Get Swap order of a user</label>
+          <input type="text" ng-model="dataForm.userId" class="form-control" id="" placeholder="user id">
+        </div>
+        <button ng-click="getParticularSwappedBooksWithUser()" type="button" class="btn btn-primary" >
+          Get
+        </button>
+      </div>
+      <div class="row container-fluid" style="padding-top:20px;">
+        <div class="form-group">
+          <label for="">Get Swap order of a library</label>
+          <input type="text" ng-model="dataForm.libraryId" class="form-control" id="" placeholder="library id">
+        </div>
+        <button ng-click="getParticularSwappedBooksWithLib()" type="button" class="btn btn-primary" >
+          Get
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

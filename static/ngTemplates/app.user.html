@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div class="row" style="padding-top:30px;">
+    <div class="col-xs-6" style="min-height:80vh;">
+      <div class="row">
+        <h3 style="text-align:center;">Users</h3>
+      </div>
+      <div class="row">
+        <div ng-repeat="u in users" style="word-wrap: break-word; padding:15px 30px;">
+          <div class="row">
+            {{u}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-6" style="border-left:1px solid #b6b1b1; min-height:80vh;">
+      <div class="row">
+        <h3 style="text-align:center;">Create user</h3>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="">Username</label>
+            <input type="text" ng-model="form.username" class="form-control" id="" placeholder="username">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for=""> First Name </label>
+            <input type="text" ng-model="form.first_name" class="form-control" id="" placeholder="first name">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for=""> Email </label>
+            <input type="text" ng-model="form.email" class="form-control" id="" placeholder="email">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for=""> Password </label>
+            <input type="password" ng-model="form.password" class="form-control" id="" placeholder="password">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <input type="checkbox" ng-model="form.is_superuser">is superuser <br>
+          <input type="checkbox" ng-model="form.is_library_admin">is library admin <br>
+          <input type="checkbox" ng-model="form.is_customer">is customer <br>
+          <input type="checkbox" ng-model="form.is_staff">is staff
+        </div>
+
+      </div>
+      <div class="row text-center">
+        <button ng-click="createUser()" type="button" class="btn btn-primary">
+          Create
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</div>

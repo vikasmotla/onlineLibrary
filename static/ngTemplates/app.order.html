@@ -1,0 +1,50 @@
+<div class="container-fluid">
+  <div class="row" style="padding-top:30px;">
+    <div class="col-xs-6" style="min-height:80vh;">
+      <div class="row">
+        <h3 style="text-align:center;">Orders</h3>
+      </div>
+      <div class="row">
+        <div ng-repeat="o in orders" style="word-wrap: break-word; padding:15px 30px;">
+          <div class="row">
+            {{o}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-6" style="border-left:1px solid #b6b1b1; min-height:80vh;">
+      <div class="row">
+        <h3 style="text-align:center;">Create Order</h3>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="">user</label>
+            <input type="text" ng-model="form.user" class="form-control" id="" placeholder="user">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for=""> Book </label>
+            <input type="text" ng-model="form.ordered_books" class="form-control" id="" placeholder="book id's to order">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for=""> library </label>
+            <input type="text" ng-model="form.library" class="form-control" id="" placeholder="library id">
+          </div>
+        </div>
+
+
+      </div>
+      <div class="row text-center">
+        <button ng-click="createOrder()" type="button" class="btn btn-primary">
+          Create
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>

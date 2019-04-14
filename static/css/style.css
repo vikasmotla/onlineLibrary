@@ -1,0 +1,212 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.zillion_container {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: #eee;
+  min-height: 100vh;
+  top: 0px;
+  position: absolute;
+}
+
+.left_container {
+  height: 100vh;
+  width: 160px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #252934;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+.right_container {
+  margin: 0px 0px 0px 160px;
+  padding: 0px;
+}
+
+.zillion_ul {
+  margin: 0px;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.zillion_ul li {
+  color: #fff;
+  list-style-type: none;
+  cursor: pointer;
+  padding: 9px 0px;
+  margin: 5px 0px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border: 1px solid #252934;
+  border-right: 5px solid #252934;
+}
+
+.zillion_ul li:hover {
+  border: 1px solid #695B81 !important;
+  border-right: 5px solid #673AB7 !important;
+}
+
+.zillion_li_active {
+  border: 1px solid #695B81 !important;
+  border-right: 5px solid #673AB7 !important;
+}
+
+.zillion_state_home {
+  text-align: center;
+}
+
+.zillion_state_home h1, .zillion_state_home h2 {
+  color: #673AB7;
+  letter-spacing: 1.5px;
+}
+
+.zillion_error {
+  margin: 8px 0px 0px 0px;
+  color: #f34c4c
+}
+
+.zillion_search_box {
+  margin: 30px 20%;
+}
+
+.zillion_search_form {
+  display: flex;
+}
+
+.zillion_search_box input {
+  width: 100%;
+  height: 30px;
+  border: 2px solid #673AB7;
+  padding: 0px 6px;
+  border-radius: 3px 0px 0px 3px;
+  background-color: #f8f6f6;
+}
+
+.zillion_search_box input:focus {
+  box-shadow: 0px 0px 8px -3px #6738BA;
+}
+
+.zillion_search_btn {
+  background-color: #673AB7;
+  border: 0px;
+  color: #fff;
+  font-size: 15px;
+  padding: 0px 30px;
+  cursor: pointer;
+  font-weight: 400;
+  border-radius: 0px 3px 3px 0px;
+}
+
+.zillion_hist_table {
+  margin: 0 5% 15px 5%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #d8d8d8;
+  background-color: #fff;
+}
+
+.zillion_hist_row {
+  display: flex;
+  padding: 12px 5px;
+  color: #7e8a92;
+}
+
+.zillion_hist_even_row {
+  background-color: #eee;
+}
+
+.zillion_hist_odd_row {
+  background-color: #fff;
+}
+
+.zillion_hist_index {
+  width: 10%;
+}
+
+.zillion_hist_keyword {
+  width: 70%;
+}
+
+.zillion_hist_searchedOn {
+  width: 20%;
+}
+
+.main_row {
+  font-size: 16px;
+  font-weight: 400;
+  color: #99abb4;
+  border-bottom: 1px solid #eee;
+}
+
+.zillion_heading {
+  text-align: center;
+  color: #673AB7;
+  letter-spacing: 1.5px;
+}
+
+.imageResults {
+  padding: 15px;
+  text-align: center;
+  animation: imgRes 1.5s;
+}
+
+.zillion_images {
+  display: inline;
+}
+
+.zillion_images img {
+  height: 170px;
+  height: 170px;
+  margin: 0px 6px 15px 0px;
+  border: 1px solid #dadada;
+  box-shadow: 1px 3px 4px #e0e0e0;
+}
+
+.zillion_images img:hover {
+  box-shadow: 3px 5px 6px #adadad;
+}
+
+.histGoBack {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background: #fff;
+  color: #673AB7;
+  border: 1px solid #673AB7;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px 3px #e0e0e0;
+  padding: 8px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.histItem:hover{
+  cursor: pointer;
+  border-bottom: 1px solid #7e8a92;
+}
+
+
+@keyframes imgRes {
+  0% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
